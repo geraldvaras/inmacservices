@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: 8082
 spring:
   application:
-    name: inventory
+    name: fraud
   datasource:
     username: 'grupoinmaculada'
-    url: jdbc:postgresql://localhost:5431/inventory
+    url: jdbc:postgresql://localhost:5432/fraud
     password: 'password'
   jpa:
     database: postgresql
@@ -36,3 +36,5 @@ management:
       show-details: always
     prometheus:
       enabled: true
+# docker compose -f stack.yml up
+# docker inspect <COINTAINER ID> | grep IPAddress

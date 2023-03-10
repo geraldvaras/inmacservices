@@ -1,0 +1,7 @@
+   __               _           __
+  /__\   _ _ __ ___| | ____ _  / _\ ___ _ ____   _____ _ __
+ /_\| | | | '__/ _ \ |/ / _` | \ \ / _ \ '__\ \ / / _ \ '__|
+//__| |_| | | |  __/   < (_| | _\ \  __/ |   \ V /  __/ |
+\__/ \__,_|_|  \___|_|\_\__,_| \__/\___|_|    \_/ \___|_|
+${application.title} ${application.version}
+Grupo La Inmaculadad - Powered by Spring Boot ${spring-boot.version}

@@ -1,0 +1,7 @@
+,------.                         ,--.
+|  .---',--.--.,--,--.,--.,--. ,-|  |
+|  `--, |  .--' ,-.  ||  ||  |' .-. |
+|  |`   |  |  \ '-'  |'  ''  '\ `-' |
+`--'    `--'   `--`--' `----'  `---'
+${application.title} ${application.version}
+Grupo La Inmaculadad - Powered by Spring Boot ${spring-boot.version}

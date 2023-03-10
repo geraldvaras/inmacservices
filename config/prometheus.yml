@@ -1,0 +1,34 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "eureka-service-job"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["192.168.2.195:8761"]
+        labels:
+          application: "eureka-server"
+  - job_name: "inventory-job"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: [ "192.168.2.195:8080" ]
+        labels:
+          application: "inventory"
+  - job_name: "fraud-job"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: [ "192.168.2.195:8082" ]
+        labels:
+          application: "fraud"
+  #- job_name: "notification-job"
+    #metrics_path: "/actuator/prometheus"
+    #static_configs:
+      #- targets: [ "localhost:8083" ]
+        #labels:
+          #application: "notification"
+  #- job_name: "api-gateway-job"
+    #metrics_path: "/actuator/prometheus"
+    #static_configs:
+      #- targets: [ "localhost:8081" ]
+        #labels:
+          #application: "api-gateway"

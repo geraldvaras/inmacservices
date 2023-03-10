@@ -1,4 +1,4 @@
-package com.grupolainmaculada.invetory.product;
+package com.grupolainmaculada.inventory.product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

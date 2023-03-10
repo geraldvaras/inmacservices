@@ -1,4 +1,4 @@
-package com.grupolainmaculada.invetory.product;
+package com.grupolainmaculada.inventory.product;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
