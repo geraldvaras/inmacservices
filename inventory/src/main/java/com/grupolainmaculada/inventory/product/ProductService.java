@@ -18,7 +18,7 @@ public class ProductService {
                 .unitPrice(new BigDecimal(productRegistrationRequest.unitPrice()))
                 .build();
         // todo: check is fraudster
-        FraudCheckResponse fraudCheckResponse = restTemplate.getForObject("http://192.168.2.195:8082/api/v1/fraud-check/{personaId}",
+        FraudCheckResponse fraudCheckResponse = restTemplate.getForObject("http://FRAUD/api/v1/fraud-check/{personaId}",
                 FraudCheckResponse.class, 1L);
         if(fraudCheckResponse.isFraudster()) {
             throw  new IllegalStateException("fraudster");

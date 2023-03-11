@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("api/v1/products")
+@RequestMapping("api/inventory")
 @RequiredArgsConstructor
 public class ProductController {
 
@@ -17,7 +17,6 @@ public class ProductController {
 
     @PostMapping
     public void getProductoByCode(@RequestBody ProductRegistrationRequest productRegistrationRequest) {
-        log.info("new product query", productRegistrationRequest);
         productService.registerProduct(productRegistrationRequest);
     }
 }
