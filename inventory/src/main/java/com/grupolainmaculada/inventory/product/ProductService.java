@@ -24,6 +24,6 @@ public class ProductService {
             throw  new IllegalStateException("fraudster");
         }
         productRepository.save(product);
-        //todo: send notification
+        // todo: send notification
     }
 }
